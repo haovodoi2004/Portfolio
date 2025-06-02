@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.home_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh 2vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_contact_link {
+    height: 5vh;
+    padding: 0.75ch 1.5vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav_contact_link:hover {
+    background-color: white;
+    color: black;
+}
+
+.sub_hero_text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.sub_hero_text p {
+    width: 35vw;
+    margin-top: 5vh;
+}
+
+.hero_text {
+    font-family: "Anton", sans-serif;
+    font-size: 12.5vw;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.scroll_btn {
+    position: absolute;
+    bottom: 2vh;
+    right: 3vh;
+}
+
+.about_section {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+
+.about_section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.about_span {
+    z-index: 1;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.about_content {
+    z-index: 1;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.about_topics {
+    width: 95%;
+    display: flex;
+    gap: 4vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.about_text {
+    font-size: 1.2vw;
+    width: 95%;
+    line-height: 1.6;
+}
+
+.skills {
+    z-index: 1;
+    padding: 0 2.5%;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+
+.projects_section {
+    font-family: "Anton", sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5vh 2vw;
+    background-color: #fff;
+    color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.project {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 25px;
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+}
+
+.project_title {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project h2 {
+    font-size: 24px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.project ul,
+.project ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.project li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.project a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.contact_section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact_section span {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.contact_section span:hover {
+    text-decoration: underline;
+}
+
+.contact_section span:nth-child(5) {
+    border: 1px solid white;
+    padding: 1vw 1.5vw;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.contact_section span:nth-child(5):hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    width: 100vw;
+    min-height: 40vh;
+    padding: 4vh 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    align-items: flex-start;
+    font-size: 1vw;
+    background-color: #111;
+    color: white;
+}
+
+.footer_title {
+    font-size: 5vw;
+    font-family: "Anton", sans-serif;
+    line-height: 1;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.footer div span {
+    cursor: pointer;
+}
+
+.footer div span:hover {
+    text-decoration: underline;
+}
+
+.uiux_knowledge {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  color: #222;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.uiux_knowledge ol {
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.uiux_knowledge ol > li {
+  margin-bottom: 20px;
+}
+
+.uiux_knowledge ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.uiux_knowledge ul > li {
+  margin-bottom: 8px;
+}
+
+.uiux_knowledge strong {
+  font-weight: 600;
+}
