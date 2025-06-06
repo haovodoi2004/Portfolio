@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="home_section">
+    <div id="home" class="home_section">
       <nav>
-        <span>Nguyễn Anh HÀo</span>
+        <span>Nguyễn Anh Hào</span>
         <span>Project</span>
-        <Span>
+        <span>
           UX/UI Designer
           <br />
-          Software Engineer
-        </Span>
+          Intern
+        </span>
         <span class="nav_contact_link">Contact</span>
       </nav>
 
@@ -39,145 +39,193 @@
 
     <div class="about_section">
       <img src="assets/img/background.jpg" />
-      <span class="about_span">Giới thiệu</span>
+      <span id="about" class="about_span">Giới thiệu</span>
       <div class="about_content">
         <div class="about_topics">
           <span>Thông tin </span>
-          <span>Các kỹ năng</span>
         </div>
         <div class="about_text">
           Họ và tên: Nguyễn Anh Hào<br>
+          Địa chỉ: Cầu Diễn, Từ Liêm, Hà Nội<br>
           Email: nguyenhao221004@gmail.com<br>
           SĐT: 0374693822<br>
           GitHub: https://github.com/haovodoi2004<br>
-          Vị trí ứng tuyển: Thực tập sinh thiết kể UI/UX<br>
+          Vị trí ứng tuyển: Thực tập sinh thiết kế UI/UX<br>
         </div>
-
-        
       </div>
-
+      <div class="about_topics">
+        <span>Các công cụ sử dụng</span>
+      </div>
       <div class="skills">
         <span>Figma</span>
         <span>Android Studio</span>
         <span>Visual Studio</span>
         <span>Jetpack Compose</span>
+        <span>Canva</span>
+        <span>Adobe Illustrator</span>
       </div>
     </div>
 
-    <div class="projects_section clearfix">
-
-<div class="project">
-  <span class="project_title">Dự án của tôi</span>
-
-  <h2>Ứng dụng mua sắm thời trang Clothique</h2>
-  <ul>
-    <li><strong>Thời gian:</strong> 02/2025 – 03/2025</li>
-    <li><strong>Frontend:</strong> JavaScript</li>
-    <li><strong>Backend:</strong> RESTful API, Firebase</li>
-  </ul>
-
-  <p><strong>Mô tả:</strong> Ứng dụng bán quần áo đa nền tảng, cho phép người dùng duyệt sản phẩm, thêm vào giỏ hàng, đặt hàng và thanh toán.</p>
-
-  <p><strong>Vai trò:</strong></p>
-  <ol>
-    <li>Thiết kế và xây dựng giao diện người dùng bằng React Native.</li>
-    <li>Quản lý trạng thái ứng dụng với Redux.</li>
-    <li>Tích hợp Firebase Cloud Messaging (FCM)...</li>
-    <li>Xây dựng giao diện và luồng thanh toán...</li>
-    <li>Xây dựng chức năng quản lý giỏ hàng...</li>
-  </ol>
-
-  <p><strong>GitHub:</strong></p>
-  <ul>
-    <li><a href="https://github.com/SonKimDev/fashion_app_Clothique" target="_blank">Backend Repo</a></li>
-    <li><a href="https://github.com/acusi004/fashion_app_Clothique_FE" target="_blank">Frontend Repo</a></li>
-  </ul>
-<p><strong>Figma Design:</strong> <a href="https://www.figma.com/design/HsTeYXhX3oQ1TAdruC7k1n/DATN---clothique?node-id=0-1&p=f" target="_blank">Xem thiết kế trên Figma</a></p>
-
-  <p><strong>Video demo:</strong> <a href="https://youtu.be/c1EV3pKetqY" target="_blank">Xem demo tại đây</a></p>
-</div>
-
-        <!-- <div class="projects_container">
-            <div class="project project1">
-                <span>01</span>
-                <img src="assets/img/1.jpg" />
-            </div>
-            <div class="sub_container">
-                <div class="project project2">
-                    <span>02</span>
-                    <img src="assets/img/2.jpg" />
-                </div>
-                <div class="project project3">
-                    <span>03</span>
-                    <img src="assets/img/3.jpg" />
-                </div>
-                <div class="project project4">
-                    <span>04</span>
-                    <img src="assets/img/4.jpg" />
-                </div>
-                <div class="project project5">
-                    <span>05</span>
-                    <img src="assets/img/5.jpg" />
-                </div>
-            </div>
-        </div> -->
-
+    <div id="project" class="projects_section clearfix">
+      <div class="project">
+        <span class="project_title">Dự án của tôi</span>
+        <h2>Ứng dụng mua sắm thời trang Clothique</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 02/2025 – 03/2025</li>
+          <li><strong>Frontend:</strong> JavaScript</li>
+          <li><strong>Backend:</strong> RESTful API, Firebase</li>
+        </ul>
+        <p><strong>Mô tả:</strong> Ứng dụng bán quần áo đa nền tảng, cho phép người dùng duyệt sản phẩm, thêm vào giỏ hàng, đặt hàng và thanh toán, tích hợp chatbot hỗ trợ khách hàng.</p>
+        <p><strong>Vai trò:</strong></p>
+        <ol>
+          <li>Thiết kế và xây dựng giao diện người dùng bằng React Native.</li>
+          <li>Quản lý trạng thái ứng dụng với Redux.</li>
+          <li>Tích hợp Firebase Cloud Messaging (FCM)...</li>
+          <li>Xây dựng giao diện và luồng thanh toán...</li>
+          <li>Xây dựng chức năng quản lý giỏ hàng...</li>
+        </ol>
+        <p><strong>GitHub:</strong></p>
+        <ul>
+          <li><a href="https://github.com/haovodoi2004/fashion_app_Clothique-dev" target="_blank">Backend Repo</a></li>
+          <li><a href="https://github.com/acusi004/fashion_app_Clothique_FE" target="_blank">Frontend Repo</a></li>
+        </ul>
+        <p><strong>Figma Design:</strong> <a href="https://www.figma.com/design/HsTeYXhX3oQ1TAdruC7k1n/DATN---clothique?node-id=0-1&p=f" target="_blank">Xem thiết kế trên Figma</a></p>
+        <p><strong>Video demo:</strong> <a href="https://youtu.be/c1EV3pKetqY" target="_blank">Xem demo tại đây</a></p>
+      </div>
     </div>
 
+     <span class="experience_title1">Kỹ năng</span>
     <div class="uiux_knowledge">
-  <ol>
-    <li>
-      <strong>Hiểu biết về UI/UX (Giao diện người dùng & Trải nghiệm người dùng)</strong>
-      <ul>
-        <li>Biết cách thiết kế sao cho dễ dùng, trực quan, thẩm mỹ.</li>
-        <li>Hiểu các nguyên tắc cơ bản: bố cục, phân cấp thị giác, khoảng trắng, tính nhất quán.</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Tư duy thiết kế lấy người dùng làm trung tâm (User-Centered Design)</strong>
-      <ul>
-        <li>Biết cách phân tích nhu cầu người dùng, hành vi, pain points.</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Kiến thức về hệ điều hành di động</strong>
-      <ul>
-        <li>Hiểu sự khác nhau giữa <strong>iOS</strong> và <strong>Android</strong> về giao diện, quy tắc thiết kế (Human Interface Guidelines của Apple và Material Design của Google).</li>
-      </ul>
-    </li>
-    <li>
-    <strong>Kỹ năng công cụ</strong>
-  <ul>
-    <li>Thiết kế giao diện với Figma: Thành thạo sử dụng Figma để thiết kế UI cho ứng dụng di động và web, tạo prototype tương tác, quản lý hệ thống thiết kế (design system), làm việc nhóm và handoff cho developer.</li>
-  </ul>
-  </li>
-  </ol>
-   
-</div>
+      <ol>
+        <li>
+          <strong>Hiểu biết về UI/UX (Giao diện người dùng & Trải nghiệm người dùng)</strong>
+          <ul>
+            <li>Biết cách thiết kế sao cho dễ dùng, trực quan, thẩm mỹ.</li>
+            <li>Hiểu các nguyên tắc cơ bản: bố cục, phân cấp thị giác, khoảng trắng, tính nhất quán.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Tư duy thiết kế lấy người dùng làm trung tâm (User-Centered Design)</strong>
+          <ul>
+            <li>Biết cách phân tích nhu cầu người dùng, hành vi, pain points.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Kiến thức về hệ điều hành di động</strong>
+          <ul>
+            <li>Hiểu sự khác nhau giữa <strong>iOS</strong> và <strong>Android</strong> về giao diện, quy tắc thiết kế (Human Interface Guidelines của Apple và Material Design của Google).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Kỹ năng công cụ</strong>
+          <ul>
+            <li>Thiết kế giao diện với Figma: Thành thạo sử dụng Figma để thiết kế UI cho ứng dụng di động và web, tạo prototype tương tác, quản lý hệ thống thiết kế (design system), làm việc nhóm và handoff cho developer.</li>
+            <li>Chuyển giao thiết kế sang Android Studio, phối hợp layout XML hoặc Jetpack Compose (nếu có).</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
 
+    <div class="experience_section" id="experience">
+      <span class="experience_title">Kinh nghiệm</span>
 
-   
+      <div class="experience_item">
+        <h2>Thiết kế giao diện người dùng ứng dụng di động đa nền tảng (React Native)</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 03/2025 – 04/2025</li>
+          <li><strong>Công cụ:</strong> React Native, Figma, Redux</li>
+          <li><strong>Vai trò:</strong></li>
+          <ol>
+            <li>Thiết kế giao diện người dùng (UI) cho ứng dụng di động sử dụng React Native, đảm bảo tương thích trên cả iOS và Android.</li>
+            <li>Áp dụng Human Interface Guidelines (Apple) và Material Design (Google) để tối ưu hóa trải nghiệm trên từng nền tảng.</li>
+            <li>Sử dụng Flexbox để xây dựng bố cục responsive, hỗ trợ nhiều kích thước màn hình.</li>
+            <li>Tích hợp Redux để quản lý trạng thái ứng dụng, đảm bảo đồng bộ dữ liệu giữa các màn hình.</li>
+            <li>Tạo prototype tương tác trong Figma và chuyển giao thiết kế cho nhóm phát triển.</li>
+          </ol>
+        </ul>
+      </div>
 
-    <div class="footer">
-        <span class="footer_title">
-            Duy 
-            <br/>
-            Thai
-        </span>
-        <span class="footer_contact_link">Let's work together</span>
-        <div class="footer_nav">
-            <span>Home</span>
-            <span>About</span>
-            <span>Project</span>
-            <span>Contact</span>
-        </div>
+      <div class="experience_item">
+        <h2>Xây dựng giao diện Android bằng Jetpack Compose (MVVM)</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 01/2025 – 02/2025</li>
+          <li><strong>Công cụ:</strong> Android Studio, Jetpack Compose, ViewModel, LiveData</li>
+          <li><strong>Vai trò:</strong></li>
+          <ol>
+            <li>Phát triển giao diện người dùng Android sử dụng Jetpack Compose theo kiến trúc MVVM.</li>
+            <li>Sử dụng ViewModel và LiveData để quản lý dữ liệu động và đảm bảo tính phản hồi của UI.</li>
+            <li>Áp dụng các thành phần Material Design để tạo giao diện trực quan, hiện đại.</li>
+            <li>Tối ưu hóa bố cục cho các thiết bị Android với kích thước màn hình khác nhau.</li>
+            <li>Phối hợp với nhóm backend để tích hợp API, đảm bảo dữ liệu được hiển thị chính xác.</li>
+          </ol>
+        </ul>
+      </div>
 
-        <div class="footer_nav">
-            <span>Linked In.</span>
-            <span>Facebook.</span>
-            <span>Instagram.</span>
-            <span>XXX.</span>
-        </div>
+      <div class="experience_item">
+        <h2>Phát triển UI Android sử dụng XML (Java)</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 11/2024 – 12/2024</li>
+          <li><strong>Công cụ:</strong> Android Studio, XML, Java</li>
+          <li><strong>Vai trò:</strong></li>
+          <ol>
+            <li>Xây dựng giao diện người dùng Android bằng XML và Java, tập trung vào tối ưu hóa bố cục.</li>
+            <li>Sử dụng ConstraintLayout và LinearLayout để hỗ trợ nhiều kích thước màn hình và độ phân giải khác nhau.</li>
+            <li>Tích hợp các thành phần UI như RecyclerView, CardView để hiển thị danh sách và chi tiết sản phẩm.</li>
+            <li>Áp dụng các nguyên tắc Material Design để đảm bảo giao diện nhất quán và trực quan.</li>
+            <li>Kiểm tra giao diện trên nhiều thiết bị (thông qua emulator và thiết bị thật) để đảm bảo tính tương thích.</li>
+          </ol>
+        </ul>
+      </div>
+
+      <div class="experience_item">
+        <h2>Thiết kế giao diện ứng dụng bán hàng (Android)</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 12/2024 – 01/2025</li>
+          <li><strong>Công cụ:</strong> Android Studio, Jetpack Compose</li>
+          <li><strong>Vai trò:</strong></li>
+          <ol>
+            <li>Thiết kế UI theo chuẩn Material Design, sử dụng Jetpack Compose.</li>
+            <li>Tạo giao diện tương tác gồm: màn hình sản phẩm, giỏ hàng, chi tiết sản phẩm, đăng nhập/đăng ký.</li>
+            <li>Sử dụng Bottom Navigation và Drawer Navigation để tổ chức luồng người dùng.</li>
+            <li>Phối hợp với ViewModel để kết nối dữ liệu và đảm bảo UI động.</li>
+          </ol>
+        </ul>
+      </div>
+
+      <div class="experience_item">
+        <h2>Thiết kế giao diện ứng dụng thời trang Clothique (React Native)</h2>
+        <ul>
+          <li><strong>Thời gian:</strong> 02/2025 – 03/2025</li>
+          <li><strong>Công cụ:</strong> React Native, Redux, Figma</li>
+          <li><strong>Vai trò:</strong></li>
+          <ol>
+            <li>Thiết kế và xây dựng giao diện người dùng đa nền tảng với React Native.</li>
+            <li>Tối ưu trải nghiệm bằng cách sử dụng Flexbox và nguyên tắc thiết kế UI hiện đại.</li>
+            <li>Quản lý trạng thái bằng Redux để đồng bộ dữ liệu UI.</li>
+            <li>Tích hợp chatbot hỗ trợ khách hàng và các luồng thanh toán đơn giản.</li>
+          </ol>
+        </ul>
+      </div>
+    </div>
+
+    <div id="contact" class="footer">
+      <span class="footer_contact_link">Liên hệ với tôi</span>
+      <span class="footer_title">
+        Anh
+        Hào
+      </span>
+      <div class="footer_nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer_nav">
+        <a href="https://www.linkedin.com/in/anh-h%C3%A0o-nguy%E1%BB%85n-5ba24b369/" target="_blank">Linked In.</a>
+        <a href="https://www.facebook.com/nguyen.hao.428487" target="_blank">Facebook.</a>
+        <a href="https://www.instagram.com/ankn1130/" target="_blank">Instagram.</a>
+        <a href="https://x.com/AnhHoNguyn18" target="_blank">XXXXXX.</a>
+      </div>
     </div>
   </body>
 </html>
